@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import'./CurrentWeather.css';
+import'./weatherForm.css';
 
 function WeatherForm({ onSearch }) {
   const [city, setCity] = useState('');
@@ -12,18 +12,19 @@ function WeatherForm({ onSearch }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <center>
-        <input
-          type="text"
-          placeholder="Enter city name"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-        />
-        <button type="submit">Get Weather</button>
-      </center>
-    </form>
-  );
+    <form onSubmit={handleSubmit} className="weather-card">
+    <input
+      type="text"
+      placeholder="Enter city name"
+      value={city}
+      onChange={(e) => setCity(e.target.value)}
+      className="weather-input"
+    />
+    <button type="submit" className="weather-button">
+      Get Weather
+    </button>
+  </form>
+);
 }
 
 export default WeatherForm;
