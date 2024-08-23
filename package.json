@@ -2,7 +2,8 @@
   "name": "weather-dashboard",
   "version": "0.1.0",
   "private": true,
-   "homepage": "https://your-username.github.io/weather-forecast-dashboard",
+   "homepage": "https://shyampratap1.github.io/shyam-pratap-wasserstoff-FullstackInternTask",
+
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
